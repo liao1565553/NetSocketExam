@@ -10,6 +10,7 @@ public class ServerListener extends Thread {
 	public void run() {
 
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket serverSocket = new ServerSocket(12345);
 
 			while(true){
